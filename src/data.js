@@ -21,7 +21,7 @@ const role = datos => {
      let anios;
      let newArray =[];
    
-   for (let i=0; i< datos.length; i++){
+   for(let i=0; i< datos.length; i++){
        anios = datos[i].yearOfBirth; 
      newArray.push(anios)   
      }
