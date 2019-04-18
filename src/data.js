@@ -31,5 +31,16 @@ const role = datos => {
      }
    }
 
+
+   const filter = (datos, filtro) => {
+    let arr = [];
+    for (let i = 0; i < datos.length; i++) {
+      if (datos[i].house.indexOf(filtro) >= 0) {
+        arr.push(datos[i]);
+      }
+    }
+    return arr;
+  };
+
    
   
