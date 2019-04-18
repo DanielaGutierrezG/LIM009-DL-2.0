@@ -10,25 +10,27 @@
     <main>
       <section id="menu" class = "col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div>
-       <img class = "col-xs-4 col-sm-4 col-md-12 col-lg-12" src="https://img1.picmix.com/output/stamp/normal/3/1/8/4/594813_0e4eb.png"></img>
+       <img src="https://img1.picmix.com/output/stamp/normal/3/1/8/4/594813_0e4eb.png"></img>
      </div>
      <div class = "col-xs-4 col-sm-4 col-md-12 col-lg-12">
-        <h1>Ordenar por edad</h1>
-        <button>&#8657 Ascendente</button>
-        <button>&#x02798 Descendente</button>
+        <div id ="w">Ordenar por edad</div>  </br>
+        <button id="boton">&#8679 Ascendente</button> </br> </br>
+        <button id="boton">&#8681 Descendente</button>
       </div>
   
       <div class = "col-xs-4 col-sm-4 col-md-12 col-lg-12">
-          <h1>Filtrar por</h1>
-            <h5>Genero</h5><select class="genero">
+        </br>
+          <div id ="w">Filtrar por</div>
+        </br>
+            <div id="filt">Genero</div><select class="genero"> 
               <option value="female">Femenino</option>
               <option value="male">Masculino</option>
             </select>
-            <h5>Rol</h5><select class="rol">
+            <div id="filt">Rol</div><select class="rol">
               <option value="student">Estudiante</option>
               <option value="staff">Personal</option>
             </select>
-            <h5>Casas</h5><select class="casas">
+            <div id="filt">Casas</div><select class="casas">
               <option value="Gryffindor">Gryffindor</option>
               <option value="Slytherin">Slytherin</option>
               <option value="Revenclaw">Revenclaw</option>
@@ -38,7 +40,7 @@
       </section>
 
       <section class = "col-xs-12 col-sm-12 col-md-9 col-lg-9">
-          <p>Personajes Harry Potter</p>
+          <div id ="w">Personajes Harry Potter</div>
           <div id="contenedor"></div>
         </section>
 

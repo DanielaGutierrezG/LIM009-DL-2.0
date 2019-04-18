@@ -1,32 +1,35 @@
 /* Manejo de data */
+const role = datos => {
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-// const contenedor = document.getElementById("contenedor");
-// const data = () =>{
-//     fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
-//     .then(res=>res.json())
-//     .then(datos=>{
-//         paintData(datos)
-//     })
-// }
-// data();
+    st = "Estudiante";
+    pr = "Personal";
+  
+    for (let i=0; i<datos.length; i++){
+      if (datos[i].hogwartsStudent == true){
+  return(st) ;}
+  
+  else
+   return(pr) 
+  
+    }
+  }
 
-// const paintData=(datos)=>{
-//     let nuevo="";
-//     for (let i=o; i<datos.lenght; i++){
-//         nuevo+=`
-//        <div> <img src="${datos[i].image} " alt="${datos[i].name}"></img>
-//         </div> 
-//          Nombre:${datos[i].actor} </br>
-//          Tipo: ${datos[i].name} </br> 
-//          Altura: ${datos[i].species} </br>  
-//          Peso: ${datos[i].house} </br>  
-//          Peso: ${datos[i].house} </br>  
-//          Peso: ${datos[i].house} </br>  
-//       </div>
-//       </div>`;
-//     }
-//     contenedor.innerHTML = nuevo;
-//     }
 
+  const age = datos => {
+ 
+    let edad;  
+     let anios;
+     let newArray =[];
+   
+   for (let i=0; i< datos.length; i++){
+       anios = datos[i].yearOfBirth; 
+     newArray.push(anios)   
+     }
+     for (let i=0; i<newArray.length; i++){
+       edad = 2019 - newArray[i];
+   console.log(edad);
+     }
+   }
+
+   
+  
