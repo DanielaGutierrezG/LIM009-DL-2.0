@@ -1,5 +1,6 @@
-/* Manejo del DOM */
+// /* Manejo del DOM */
 // const contenedor = document.getElementById("contenedor");
+
 const data = () =>{
     fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
     .then(res=>res.json())
@@ -48,9 +49,71 @@ const paintData=(datos)=>{
          ${datos[i].actor} </br>  
         </section> 
         </section> 
-
         `;
     }
     contenedor.innerHTML = nuevo;
     }
+    
+
+// paintData(valuesPotter);
+
+// const home = document.getElementsByClassName("casas");
+// for (let i=0; i<home.length; i++){
+//     console.log(home[i])
+//     home[i].addEventListener("change", ()=>{
+//         let valor = home[i].value;
+//         if(valor === "Gryffindor"){
+//             let gryff = window.filterHome(valuesPotter, valor);
+//             paintData(gryff);
+//         }
+
+//         if(valor === "Slytherin"){
+//             let Slyt = window.filterHome(valuesPotter, valor);
+//             paintData(Slyt);
+//         }
+
+//         if(valor === "Ravenclaw"){
+//             let raven = window.filterHome(valuesPotter, valor);
+//             paintData(raven);
+//         }
+
+//         if(valor === "Hufflepuff"){
+//             let huffle = window.filterHome(valuesPotter, valor);
+//             paintData(huffle);
+//         }
+
+//         })
+//     };
+
+//     const gender = document.getElementsByClassName("genero");
+//     for (let i=0; i<gender.length; i++){
+//         gender[i].addEventListener("change", ()=>{
+//             let valor = gender[i].value;
+//             if(valor === "female"){
+//                 let femenino = window.filterGender(valuesPotter, valor);
+//                 paintData(femenino);
+//             }
+//             else if (valor === "male"){
+//                 let masculino = window.filterGender(valuesPotter, valor);
+//                 paintData(masculino);
+//             }
+//         })
+//     };
+
+//     const rol = document.getElementsByClassName("rol");
+//     for (let i=0; i<rol.length; i++){
+//         rol[i].addEventListener("change", ()=>{
+//            let valor = rol[i].value;
+//            if (valor === "student") {
+//                let estudiante = window.filterStudent(valuesPotter);
+//                paintData(estudiante);
+//            }
+//            else if (valor === "staff") {
+//                let personal = window.filterStaff(valuesPotter);
+//                paintData(personal);
+//            }
+//         })
+//     }
+
+
 

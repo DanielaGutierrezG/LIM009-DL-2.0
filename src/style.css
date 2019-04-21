@@ -50,51 +50,55 @@
     }
 
     #Imagenes{
-        width: 100px; 
-        height: 100px;
+        width: 130px; 
+        height: 130px;
         border-radius:150px;
         border:2.5px solid dimgray;
+        padding: 10px;
     }
 
     #bandera{
-        width: 50px; 
-        height: 50px;
-        border:2.5px solid dimgray;
+        width: 40px; 
+        height: 40px;
+        border:1.3px solid dimgray;
+        border-radius:150px;
         float: right;
+        padding: 3px;
     }
 
     #icono{
-        width: 25px; 
-        height: 25px;
-        border:1px solid dimgray;
+        width: 50px; 
+        height: 50px;
+        
     }
 
     #x{
         background:rgb(43, 41, 41);
     }
 
-    #w{
+    .w{
         background:rgb(247, 206, 70);
         font-size: 30px;
+        text-align: center;
     }
 
     #letra{
         font-size: 16px;
-        font-weight: 1000;
-        
+        padding: 20px;
     }
 
     #menu{
         background:rgb(43, 41, 41);
     }
 
-    #boton{
+    #btn{
         font-size: 15px;
     }
 
     .info{
         background:rgb(43, 41, 41);
-        color: blanchedalmond;
+        color: white;
+        padding: 50px;
     }
 
     
