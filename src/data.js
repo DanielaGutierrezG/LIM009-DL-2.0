@@ -55,7 +55,7 @@ window.filterStaff = filterStaff;
 //   console.assert(equal(
 //     ordered,
 
-const sortAge = (datos) => {
+const sortAgeDes = (datos) => {
     let ordered = datos.sort((a,b) => {
         if (a.yearOfBirth > b.yearOfBirth) {
             return 1;
@@ -65,7 +65,23 @@ const sortAge = (datos) => {
           } );
           return ordered
     };
-window.sortAge = sortAge;
+
+window.sortAgeDes = sortAgeDes;
+
+
+
+const sortAgeAsc = (datos) => {
+    let ordered = datos.sort((a,b) => {
+        if (a.yearOfBirth < b.yearOfBirth) {
+            return 1;
+          } else {
+            return -1;
+          }
+          } );
+          return ordered
+    };
+
+window.sortAgeAsc = sortAgeAsc;
 
    
   

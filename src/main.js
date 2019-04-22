@@ -48,10 +48,20 @@ const data5 = () =>{
     fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
     .then(res=>res.json())
     .then(datos=>{
-       paintSort(datos)
+       paintSortAsc(datos)
     })
 }
 data5();
+
+
+const data6 = () =>{
+    fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
+    .then(res=>res.json())
+    .then(datos=>{
+       paintSortDes(datos)
+    })
+}
+data6();
 
 const paintData=(datos)=>{
     let nuevo="";
@@ -165,9 +175,23 @@ const paintGender=(datos)=>{
         })
     }};
 
-//  const paintSort=(datos)=>{
-// document.getElementById("btnAscendente").addEventListener("click", () => {
-       
+ 
+    const paintSortDes=(datos)=>{
 
-//     const paintSort=(datos)=>{
-//         document.getElementById("btnDescendente").addEventListener("click", () => {
+ document.getElementById("btnDescendente").addEventListener("click", () => {
+     let ordenado = window.sortAgeDes(datos);
+     paintData(ordenado);
+})
+    }
+
+
+
+    const paintSortAsc=(datos)=>{
+
+     document.getElementById("btnAscendente").addEventListener("click", () => {
+        let ordenado = window.sortAgeAsc(datos);
+        paintData(ordenado);
+   })
+       }
+   
+   
