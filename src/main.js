@@ -1,14 +1,45 @@
 // /* Manejo del DOM */
-// const contenedor = document.getElementById("contenedor");
 
 const data = () =>{
     fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
     .then(res=>res.json())
     .then(datos=>{
-        paintData(datos)
+       paintData(datos)
     })
 }
 data();
+
+
+const data2 = () =>{
+    fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
+    .then(res=>res.json())
+    .then(datos=>{
+       paintHouses(datos)
+    })
+}
+data2();
+
+
+
+const data3 = () =>{
+    fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
+    .then(res=>res.json())
+    .then(datos=>{
+       paintGender(datos)
+    })
+}
+ data3();
+
+
+
+const data4 = () =>{
+    fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
+    .then(res=>res.json())
+    .then(datos=>{
+       paintRol(datos)
+    })
+}
+data4();
 
 const paintData=(datos)=>{
     let nuevo="";
@@ -55,65 +86,69 @@ const paintData=(datos)=>{
     }
     
 
-// paintData(valuesPotter);
 
-// const home = document.getElementsByClassName("casas");
-// for (let i=0; i<home.length; i++){
-//     console.log(home[i])
-//     home[i].addEventListener("change", ()=>{
-//         let valor = home[i].value;
-//         if(valor === "Gryffindor"){
-//             let gryff = window.filterHome(valuesPotter, valor);
-//             paintData(gryff);
-//         }
+const home = document.getElementsByClassName("casas");
 
-//         if(valor === "Slytherin"){
-//             let Slyt = window.filterHome(valuesPotter, valor);
-//             paintData(Slyt);
-//         }
+const paintHouses=(datos)=>{
+for (let i=0; i<home.length; i++){
+    console.log(home[i])
+    home[i].addEventListener("change", ()=>{
+        let valor = home[i].value;
+        if(valor === "Gryffindor"){
+            let gryff = window.filterHome(datos, valor);
+            paintData(gryff);
+        }
 
-//         if(valor === "Ravenclaw"){
-//             let raven = window.filterHome(valuesPotter, valor);
-//             paintData(raven);
-//         }
+        if(valor === "Slytherin"){
+            let Slyt = window.filterHome(datos, valor);
+            paintData(Slyt);
+        }
 
-//         if(valor === "Hufflepuff"){
-//             let huffle = window.filterHome(valuesPotter, valor);
-//             paintData(huffle);
-//         }
+        if(valor === "Ravenclaw"){
+            let raven = window.filterHome(datos, valor);
+            paintData(raven);
+        }
 
-//         })
-//     };
+        if(valor === "Hufflepuff"){
+            let huffle = window.filterHome(datos, valor);
+            paintData(huffle);
+        }
 
-//     const gender = document.getElementsByClassName("genero");
-//     for (let i=0; i<gender.length; i++){
-//         gender[i].addEventListener("change", ()=>{
-//             let valor = gender[i].value;
-//             if(valor === "female"){
-//                 let femenino = window.filterGender(valuesPotter, valor);
-//                 paintData(femenino);
-//             }
-//             else if (valor === "male"){
-//                 let masculino = window.filterGender(valuesPotter, valor);
-//                 paintData(masculino);
-//             }
-//         })
-//     };
-
-//     const rol = document.getElementsByClassName("rol");
-//     for (let i=0; i<rol.length; i++){
-//         rol[i].addEventListener("change", ()=>{
-//            let valor = rol[i].value;
-//            if (valor === "student") {
-//                let estudiante = window.filterStudent(valuesPotter);
-//                paintData(estudiante);
-//            }
-//            else if (valor === "staff") {
-//                let personal = window.filterStaff(valuesPotter);
-//                paintData(personal);
-//            }
-//         })
-//     }
+        })
+    }};
 
 
+    
+const paintGender=(datos)=>{
+    const gender = document.getElementsByClassName("genero");
+    for (let i=0; i<gender.length; i++){
+        gender[i].addEventListener("change", ()=>{
+            let valor = gender[i].value;
+            if(valor === "female"){
+                let femenino = window.filterGender(datos, valor);
+                paintData(femenino);
+            }
+            else if (valor === "male"){
+                let masculino = window.filterGender(datos, valor);
+                paintData(masculino);
+            }
+        })
+  }  };
 
+
+  const paintRol=(datos)=>{
+
+    const rol = document.getElementsByClassName("rol");
+    for (let i=0; i<rol.length; i++){
+        rol[i].addEventListener("change", ()=>{
+           let valor = rol[i].value;
+           if (valor === "student") {
+               let estudiante = window.filterStudent(datos);
+               paintData(estudiante);
+           }
+           else if (valor === "staff") {
+               let personal = window.filterStaff(datos);
+               paintData(personal);
+           }
+        })
+    }};
