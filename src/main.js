@@ -1,4 +1,5 @@
 // /* Manejo del DOM */
+// const contenedor = document.getElementById("contenedor");
 
 const data = () =>{
     fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
@@ -40,6 +41,17 @@ const data4 = () =>{
     })
 }
 data4();
+
+
+
+const data5 = () =>{
+    fetch('https://raw.githubusercontent.com/DanielaGutierrezG/LIM009-DL-2.0/master/src/data/potter.json')
+    .then(res=>res.json())
+    .then(datos=>{
+       paintSort(datos)
+    })
+}
+data5();
 
 const paintData=(datos)=>{
     let nuevo="";
@@ -152,3 +164,10 @@ const paintGender=(datos)=>{
            }
         })
     }};
+
+//  const paintSort=(datos)=>{
+// document.getElementById("btnAscendente").addEventListener("click", () => {
+       
+
+//     const paintSort=(datos)=>{
+//         document.getElementById("btnDescendente").addEventListener("click", () => {
