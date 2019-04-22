@@ -78,9 +78,6 @@
         background:rgb(247, 206, 70);
         font-size: 30px;
         text-align: center;
-        animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
     }
 
     #letra{
