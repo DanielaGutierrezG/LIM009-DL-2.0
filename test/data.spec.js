@@ -21,3 +21,14 @@ describe('filterHouse', () => {
     expect(window.filterGender([{ name: "Draco", house: "Slytherin"}, { name: "Harry Potter", house: "Gryffindor"}], "Gryffindor")).toEqual({ name: "Harry Potter", house: "Gryffindor"});
   });
 });
+
+
+// describe('filterHouse', () => {
+//   it('debería ser una función', () => {
+//     expect(typeof window.filterHouse).toBe('function');
+//   });
+
+//   it('Esta funcion deberia filtrar por genero', () => {
+//     expect(window.filterGender([{ name: "Draco", house: "Slytherin"}, { name: "Harry Potter", house: "Gryffindor"}], "Gryffindor")).toEqual({ name: "Harry Potter", house: "Gryffindor"});
+//   });
+// });
