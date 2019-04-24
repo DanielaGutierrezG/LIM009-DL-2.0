@@ -48,6 +48,8 @@
     }
 
     #Imagenes{
+        display:block;
+        margin:auto;
         width: 130px; 
         height: 130px;
         border-radius:150px;
@@ -97,6 +99,11 @@
         background:rgb(43, 41, 41);
         color: white;
         padding: 50px;
+    }
+
+    .centrar{
+        text-align: center;
+
     }
 
     
