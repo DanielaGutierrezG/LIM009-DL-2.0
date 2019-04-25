@@ -21,91 +21,82 @@
     float: left;
 }
 
-@media(max-width:767px){
-.col-xs-12{width: 100%;}
-.col-xs-6{width: 50%;}
-.col-xs-4{width: 33.33333333%;}
+.personaje {
+    outline: 3px solid white;
+    background:rgb(43, 41, 41);
 }
 
-@media(max-width:991px) and (min-width:768px){
-    .col-sm-12{width: 100%;}
-    .col-sm-6{width: 50%;}
-    .col-sm-4{width: 33.33333333%;}
-    }
-
-@media(max-width:1199px) and (min-width:992px){
-    .col-md-12{width: 100%;}
-    .col-md-9{width: 75%;}
-    .col-md-4{width: 33.33333333%;}
-    .col-md-3{width: 25%;}
-    }
+@media(max-width:767px){
+    .col-xs-12{width: 100%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-4{width: 33.33333333%;}
+}
 
 @media(min-width:1200px){
     .col-lg-12{width: 100%;}
     .col-lg-9{width: 75%;}
     .col-lg-4{width: 33.33333333%;}
     .col-lg-3{width: 25%;}
-    }
+}
 
-    #Imagenes{
-        display:block;
-        margin:auto;
-        width: 130px; 
-        height: 130px;
-        border-radius:150px;
-        border:2.5px solid dimgray;
-        padding: 10px;
-    }
+.Imagenes{
+    display:block;
+    margin:auto;
+    width: 130px; 
+    height: 130px;
+    border-radius:150px;
+    border:2.5px solid dimgray;
+    padding: 10px;
+}
 
-    #bandera{
-        width: 40px; 
-        height: 40px;
-        border:1.3px solid dimgray;
-        border-radius:150px;
-        float: right;
-        padding: 3px;
-    }
+.bandera{
+    width: 40px; 
+    height: 40px;
+    border:1.3px solid dimgray;
+    border-radius:150px;
+    float: right;
+    padding: 3px;
+}
 
-    #icono{
-        width: 50px; 
-        height: 50px;
-        
-    }
+.icono{
+    width: 50px; 
+    height: 50px;      
+ }
 
-    #x{
-        background:rgb(43, 41, 41);
-    }
+.opciones{
+    background:rgb(247, 206, 70);
+    font-size: 30px;
+    text-align: center;
+}
 
-    .w{
-        background:rgb(247, 206, 70);
-        font-size: 30px;
-        text-align: center;
-    }
+.letra{
+    font-size: 16px;
+    padding: 20px;
+}
 
-    #letra{
-        font-size: 16px;
-        padding: 20px;
-    }
+.menu{
+    background:rgb(43, 41, 41);
+}
 
-    #menu{
-        background:rgb(43, 41, 41);
-    }
+.btn{
+    font-size: 15px;
+}
 
-    #btn{
-        font-size: 15px;
-    }
+.info{
+    background:rgb(43, 41, 41);
+    color: white;
+    padding: 50px;
+}
 
-    .info{
-        background:rgb(43, 41, 41);
-        color: white;
-        padding: 50px;
-    }
+.centrar{
+    text-align: center;
+}
 
-    .centrar{
-        text-align: center;
 
-    }
 
+      
+      
+      
     
 
 

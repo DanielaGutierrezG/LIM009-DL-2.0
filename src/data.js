@@ -25,7 +25,7 @@ window.filterHome = filterHome;
 const filterStudent = (datos) => {
   let nuevo = [];
   for (let i = 0; i < datos.length; i++) {
-    if (datos[i].hogwartsStudent === true) {
+    if (datos[i].hogwartsStudent ) {
       nuevo.push(datos[i]);
     }
   }
@@ -36,7 +36,7 @@ window.filterStudent = filterStudent;
 const filterStaff = (datos) => {
   let nuevo = [];
   for (let i = 0; i < datos.length; i++) {
-    if (datos[i].hogwartsStaff === true) {
+    if (datos[i].hogwartsStaff) {
       nuevo.push(datos[i]);
     }
   }
@@ -44,15 +44,6 @@ const filterStaff = (datos) => {
 };
 window.filterStaff = filterStaff;
 
-
-// let ordered = inventors.sort((a, b) => {
-//     if (a.year > b.year) {
-//       return 1;
-//     }
-//     return -1;
-//   });
-//   console.assert(equal(
-//     ordered,
 
 const sortAgeDes = (datos) => {
   let ordered = datos.sort((a, b) => {
