@@ -67,7 +67,8 @@ const paintData=(datos)=>{
     let nuevo="";
     for (let i=0; i<datos.length; i++){
         nuevo +=`
-        <section class = "col-xs-6 col-sm-6 col-md-4 col-lg-4">
+        <section class = "card-img-top col-xs-6 col-sm-6 col-md-4 col-lg-4">
+        <div class="card" style="width: 18rem;">
         <section id = "x">`
         if (datos[i].house == "Slytherin") {
             nuevo +=`<div><img id="bandera" src="https://www.logolynx.com/images/logolynx/53/5390e974544de6279c4d9cb6253e3a2c.jpeg"></div>`
@@ -82,8 +83,10 @@ const paintData=(datos)=>{
             nuevo +=`<div><img id="bandera" src="https://i0.wp.com/bloghogwarts.com/wp-content/uploads/2008/05/ravenclawcrest.jpg"></div>`
         } 
         nuevo+=`
-        <center><img id ="Imagenes" src="${datos[i].image}"></img></center></section> 
-        <section class="info" id="letra">
+        <div class="card" style="width: 18rem;">
+        <center><img class="card-img-top" id ="Imagenes" src="${datos[i].image}"></img></center></section>
+        <div class="card-body"> 
+        <section class="info card-text" id="letra">
         <center>${datos[i].name}</center> </br>
         <center>${datos[i].house}</center> </br> 
         <div><img id="icono" src="https://image.flaticon.com/icons/png/512/37/37171.png">Especie</div></br>
@@ -102,6 +105,7 @@ const paintData=(datos)=>{
          ${datos[i].actor} </br>  
         </section> 
         </section> 
+        </div>
         `;
     }
     contenedor.innerHTML = nuevo;
@@ -113,7 +117,6 @@ const home = document.getElementsByClassName("casas");
 
 const paintHouses=(datos)=>{
 for (let i=0; i<home.length; i++){
-    console.log(home[i])
     home[i].addEventListener("change", ()=>{
         let valor = home[i].value;
         if(valor === "Gryffindor"){
