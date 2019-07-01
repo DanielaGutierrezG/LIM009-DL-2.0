@@ -82,6 +82,9 @@ const paintData=(datos)=>{
         if (datos[i].house == "Ravenclaw") {
             nuevo +=`<div><img id="bandera" src="https://i0.wp.com/bloghogwarts.com/wp-content/uploads/2008/05/ravenclawcrest.jpg"></div>`
         } 
+        if (datos[i].house == "") {
+            nuevo +=`<div><img id="bandera" src="https://image.freepik.com/iconos-gratis/x-circulo_318-2105.jpg"></div>`
+        }
         nuevo+=`
         <div class="card" style="width: 18rem;">
         <center><img class="card-img-top" id ="Imagenes" src="${datos[i].image}"></img></center></section>
