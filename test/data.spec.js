@@ -10,6 +10,7 @@ describe('filterGender', () => {
   it('Esta funcion deberia filtrar por genero', () => {
     expect(window.filterGender([{ name: "Hermione", gender: "female"}, { name: "Harry Potter", gender: "male"}], "female")).toEqual([{ name: "Hermione", gender: "female"}]);
   });
+<<<<<<< HEAD
 });
 
 describe('filterHome', () => {
@@ -65,3 +66,18 @@ describe('sortAgeAsc', () => {
     expect(window.sortAgeAsc([{yearOfBirth: 1995}, {yearOfBirth: 1865}])).toEqual([{yearOfBirth: 1995}, {yearOfBirth: 1865}]);
   });
 });
+=======
+})
+
+
+// describe('example', () => {
+  
+//   it('debería ser una función', () => {
+//     assert.equal(typeof example, 'function');
+//   });
+
+//   it('debería retornar "example"', () => {
+//     assert.equal(example(), 'example');
+//   });
+// })
+>>>>>>> eb4ea4f4c04fc35fa1235ee225389fee5f230bdf
